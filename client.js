@@ -10,7 +10,7 @@ const app = new Vue({
       .get(API)
       .then(response => {
         console.log(response);
-        return (this.items = response.json())
+        return (this.items = response.data)
       });
   }
  });

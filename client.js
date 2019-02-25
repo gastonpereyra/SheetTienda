@@ -8,6 +8,9 @@ const app = new Vue({
   mounted () {
     axios
       .get(API)
-      .then(response => (this.items = response))
+      .then(response => {
+        console.log(response);
+        return (this.items = response.json())
+      });
   }
  });

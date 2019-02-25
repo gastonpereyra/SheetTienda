@@ -8,16 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="client.js" defer></script>
     <!-- Uso Bulma y FontAwesome para Maqueteado -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <!-- Vue.js -->
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Script -->
+    <script src="client.js" defer></script>
   </head>
   <body>
-  <main class="hero is-warning is-bold is-fullheight" id="main">
+  <main class="hero is-success is-bold is-fullheight" id="main">
       <!-- Barra Superior-->
       <div class="hero-head">
         <nav class="navbar">
@@ -34,6 +37,38 @@
       <!-- Contenido Principal -->
       <div class="hero-body">
         <div class="container">
+          <article class="media">
+            <figure class="media-left">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-reply"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+                  </a>
+                  <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <div class="media-right">
+              <button class="delete"></button>
+            </div>
+          </article>
         </div>
       </div>
       <!-- Pie de Pagina -->
